@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="MotorDriver.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MotorDriver"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Slider x:Name="MaxPowerSlider" HorizontalAlignment="Left" Margin="173,127,0,0" VerticalAlignment="Top" Width="820" ValueChanged="MaxPowerSlider_ValueChanged"/>
+        <Slider x:Name="SpeedSlider" HorizontalAlignment="Left" Margin="173,197,0,0" VerticalAlignment="Top" Width="820" ValueChanged="SpeedSlider_ValueChanged"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="25,128,0,0" TextWrapping="Wrap" Text="Max Power" VerticalAlignment="Top" Height="37" Width="121" TextAlignment="Right" FontSize="22" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="25,198,0,0" TextWrapping="Wrap" Text="Speed" VerticalAlignment="Top" Height="37" Width="121" TextAlignment="Right" FontSize="22" FontWeight="Bold"/>
+        <ListBox x:Name="SequenceList" HorizontalAlignment="Left" Height="340" Margin="25,400,0,0" VerticalAlignment="Top" Width="968" SelectionChanged="SequenceList_SelectionChanged"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="25,358,0,0" TextWrapping="Wrap" Text="Control Sequence" VerticalAlignment="Top" Height="37" Width="237" FontSize="22" FontWeight="Bold"/>
+        <Slider x:Name="MinPowerSlider" HorizontalAlignment="Left" Margin="173,60,0,0" VerticalAlignment="Top" Width="820" ValueChanged="MinPowerSlider_ValueChanged"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="25,61,0,0" TextWrapping="Wrap" Text="Min Power" VerticalAlignment="Top" Height="37" Width="121" TextAlignment="Right" FontSize="22" FontWeight="Bold"/>
+        <Slider x:Name="MotorOffsetSlider" HorizontalAlignment="Left" Margin="173,267,0,0" VerticalAlignment="Top" Width="820" ValueChanged="MotorOffsetSlider_ValueChanged" Maximum="10" LargeChange="1"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="25,268,0,0" TextWrapping="Wrap" Text="Offset" VerticalAlignment="Top" Height="37" Width="121" TextAlignment="Right" FontSize="22" FontWeight="Bold"/>
+
+    </Grid>
+</Page>

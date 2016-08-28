@@ -1,2 +1,2 @@
-# CP.IoT
-IoT Libraries and Apps
+# CP.Windows.IoT
+Windows IoT Libraries and Apps
